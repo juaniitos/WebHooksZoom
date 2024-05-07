@@ -10,7 +10,7 @@ def main(timer: func.TimerRequest) -> None:
 
     # Suponemos que tienes almacenado el token de acceso en una variable de entorno o de configuración segura
     access_token = '<your_zoom_access_token>'
-    meeting_id = '85866367995'  # ID de la reunión
+    meeting_id = '848 2029 2301'  # ID de la reunión
 
     url = f'https://api.zoom.us/v2/meetings/{meeting_id}/meetings'
     headers = {
@@ -23,6 +23,10 @@ def main(timer: func.TimerRequest) -> None:
                 'enable': True,
                 'rooms': [
                     # Añade aquí la configuración de tus salas de grupos pequeños
+                    {"name": "A-Case Processing Team", 
+                        "participants": [ 
+                            "ja.solorzano@csall.ca", "juan.solorzano19@gmail.com"
+                    ]}
                 ]
             }
         }
